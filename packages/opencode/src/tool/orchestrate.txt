@@ -1,0 +1,35 @@
+Launch the master orchestrator to execute complex multi-agent tasks with 100x enhanced capabilities.
+
+The orchestrator tool provides:
+1. **Intelligent Agent Selection**: Automatically selects the best agents based on task analysis and historical performance
+2. **Parallel Execution**: Runs multiple agents concurrently for faster results
+3. **Performance Tracking**: Learns from past executions to improve future agent selection
+4. **Result Aggregation**: Combines outputs from multiple agents into comprehensive results
+5. **Insights & Recommendations**: Provides actionable insights about execution efficiency
+
+When to use the Orchestrator tool:
+- Complex tasks that can benefit from multiple specialized agents
+- When you need maximum intelligence and capability
+- For research tasks requiring multiple perspectives
+- When task decomposition and parallel execution would improve results
+- For high-priority tasks where quality and thoroughness are critical
+
+The orchestrator analyzes your tasks and:
+- Assigns the most suitable agents based on their specializations
+- Executes tasks in parallel when possible
+- Handles agent failures by trying alternative agents
+- Tracks performance to continuously improve
+- Provides detailed insights and recommendations
+
+Example usage:
+1. Break down a complex problem into subtasks
+2. Define dependencies between tasks if needed
+3. Let the orchestrator intelligently assign and execute with multiple agents
+4. Receive aggregated results with insights and recommendations
+
+This is ideal for:
+- Comprehensive codebase analysis
+- Multi-step refactoring tasks
+- Complex research and investigation
+- Tasks requiring diverse tool usage
+- Scenarios where you want the highest quality results

@@ -10,6 +10,7 @@ import PROMPT_COMPACTION from "./prompt/compaction.txt"
 import PROMPT_EXPLORE from "./prompt/explore.txt"
 import PROMPT_SUMMARY from "./prompt/summary.txt"
 import PROMPT_TITLE from "./prompt/title.txt"
+import PROMPT_MASTER from "./prompt/master.txt"
 import { PermissionNext } from "@/permission/next"
 import { mergeDeep, pipe, sortBy, values } from "remeda"
 
@@ -157,6 +158,15 @@ export namespace Agent {
           user,
         ),
         prompt: PROMPT_SUMMARY,
+      },
+      master: {
+        name: "master",
+        description: "Master orchestrator agent with 100x capabilities. Intelligently coordinates multiple specialized agents for complex tasks, executes work in parallel, and provides comprehensive solutions with performance insights.",
+        mode: "all",
+        options: {},
+        native: true,
+        permission: PermissionNext.merge(defaults, user),
+        prompt: PROMPT_MASTER,
       },
     }
 

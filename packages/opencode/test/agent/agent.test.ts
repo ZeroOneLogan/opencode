@@ -24,6 +24,7 @@ test("returns default native agents when no config", async () => {
       expect(names).toContain("compaction")
       expect(names).toContain("title")
       expect(names).toContain("summary")
+      expect(names).toContain("master")
     },
   })
 })
@@ -443,6 +444,46 @@ test("legacy tools config maps write/edit/patch/multiedit to edit permission", a
     fn: async () => {
       const build = await Agent.get("build")
       expect(evalPerm(build, "edit")).toBe("deny")
+    },
+  })
+})
+
+test("master agent has correct default properties", async () => {
+  await using tmp = await tmpdir()
+  await Instance.provide({
+    directory: tmp.path,
+    fn: async () => {
+      const master = await Agent.get("master")
+      expect(master).toBeDefined()
+      expect(master?.mode).toBe("all")
+      expect(master?.native).toBe(true)
+      expect(master?.description).toContain("100x capabilities")
+      expect(evalPerm(master, "orchestrate")).toBe("allow")
+      expect(evalPerm(master, "edit")).toBe("allow")
+      expect(evalPerm(master, "bash")).toBe("allow")
+    },
+  })
+})
+
+test("master agent can be customized via config", async () => {
+  await using tmp = await tmpdir({
+    config: {
+      agent: {
+        master: {
+          model: "openai/gpt-4",
+          temperature: 0.8,
+        },
+      },
+    },
+  })
+  await Instance.provide({
+    directory: tmp.path,
+    fn: async () => {
+      const master = await Agent.get("master")
+      expect(master).toBeDefined()
+      expect(master?.model?.providerID).toBe("openai")
+      expect(master?.model?.modelID).toBe("gpt-4")
+      expect(master?.temperature).toBe(0.8)
     },
   })
 })

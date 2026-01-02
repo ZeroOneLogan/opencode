@@ -1,0 +1,39 @@
+Perform advanced analysis with 100x enhanced intelligence capabilities.
+
+The analyze tool provides comprehensive multi-perspective analysis and intelligent task decomposition. It leverages advanced AI reasoning to break down complex problems and provide insights from multiple expert viewpoints.
+
+**Capabilities:**
+
+1. **Multi-Perspective Analysis**: Analyzes problems from 5 specialized perspectives:
+   - Technical Implementation: Architecture, design patterns, code quality
+   - User Experience: Usability, accessibility, user flow
+   - Security: Vulnerabilities, attack vectors, best practices
+   - Performance: Speed, efficiency, scalability
+   - Maintainability: Code organization, documentation, technical debt
+
+2. **Automatic Task Decomposition**: Intelligently breaks down complex tasks:
+   - Identifies optimal subtask breakdown
+   - Determines task dependencies
+   - Suggests parallel execution opportunities
+   - Estimates complexity and priority
+
+3. **Comprehensive Reporting**: Generates detailed analysis reports with:
+   - Problem statement and context
+   - Perspective-specific insights
+   - Identified strengths and concerns
+   - Actionable recommendations
+   - Recommended task execution strategy
+
+**When to use the analyze tool:**
+- Before starting complex implementation work
+- When you need comprehensive problem understanding
+- For architectural decision making
+- When multiple perspectives are valuable
+- To identify risks and opportunities upfront
+
+**When NOT to use the analyze tool:**
+- For simple, straightforward tasks
+- When immediate action is needed without analysis
+- For tasks with well-understood solutions
+
+The analyze tool is ideal for high-stakes decisions, complex problems, and situations where thorough understanding is critical before taking action.

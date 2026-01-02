@@ -11,6 +11,7 @@ import { WriteTool } from "./write"
 import { InvalidTool } from "./invalid"
 import { SkillTool } from "./skill"
 import { OrchestrateTool } from "./orchestrate"
+import { AnalyzeTool } from "./analyze"
 import type { Agent } from "../agent/agent"
 import { Tool } from "./tool"
 import { Instance } from "../project/instance"
@@ -99,6 +100,7 @@ export namespace ToolRegistry {
       WriteTool,
       TaskTool,
       OrchestrateTool,
+      AnalyzeTool,
       WebFetchTool,
       TodoWriteTool,
       TodoReadTool,
